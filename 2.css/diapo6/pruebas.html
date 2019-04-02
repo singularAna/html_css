@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<title>pruebas textos</title>
+
+	<style type="text/css">
+		
+		section {
+   	display: flex;
+    justify-content: space-between;
+	}
+
+	p{
+		text-indent: 1em;
+		word-break: initial;
+	}
+
+	h1 {
+		text-decoration-line: underline;
+  		text-decoration-style: double;
+  		text-shadow: 2px 2px #ff0000;
+	}
+
+	h2.a {
+ 	 visibility: visible;
+	}
+
+	h2.b {
+  	visibility: hidden;
+	}
+
+	a:hover { 
+ 	 color: #ff6600;
+	}
+
+	div {
+  	width: 100px; 
+ 	border: 1px solid #000000;
+ 	display: inline-block;
+	}
+
+	div.a {
+  	word-wrap: normal;
+	}
+
+	div.b {
+ 	word-wrap: break-word;
+ 	background-color: #6699ff ;
+  	opacity: 0.5
+	}
+
+	p.c { 
+  	word-spacing: 1vw;
+	}
+
+	div.d { 
+  	background-color: #6699ff;
+  	width: 110px;
+  	height: 110px;
+  	overflow: scroll;
+	}
+
+	div.e {
+ 	white-space: nowrap; 
+  	width: 100px; 
+  	overflow: hidden;
+  	text-overflow: ellipsis; 
+  	border: 1px solid #000000;
+	}
+
+	</style>
+
+</head>
+
+
+
+	<body>
+
+		<header>
+			<h1>Primer título</h1>
+
+			<a href="#>"><h2 class="a">This heading is visible</h2></a>
+
+			<h2 class="b">This heading is hidden</h2>
+
+		</header>
+
+		
+
+		<section>
+		
+			<p>Ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+			<p class="c">Ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</section>
+
+			<div class="a">
+			<p>Ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua.</p>
+			</div>
+
+			<div class="b">
+			<p>Ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua.</p>
+			</div>
+
+			<div class="d">
+			<p>Ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			</div>
+
+			<div class="e">
+			Ipsum sunt in culpa qui officia deserunt mollit anim id est laborum.
+			</div>
+
+
+		
+
+	</body>
+
+</html>

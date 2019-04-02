@@ -1,0 +1,40 @@
+
+*{
+	margin: 0px;
+	padding: : 0px;
+}
+
+
+html{
+	background-color: #ffffb3;
+}
+
+p{
+	margin-bottom: 10px;
+}
+
+
+
+body{
+	font-family: arial;
+	margin:20px auto 20px auto;
+	padding: 20px;
+	width: 60%;
+	background-color: #9999ff;
+	border-radius: 60px;
+	box-shadow: 10px 10px 10px  #c2f0f0;
+}
+
+h1, h2 {
+	color: red;
+	text-shadow: 3px 2px 3px #ff9966;
+}
+
+figure {
+	padding: 10px;
+	background-color: #79d2a6;
+}
+
+figure img{
+	width: 50%;
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>formulario</title>
+
+	<style type="text/css">
+		fieldset{
+			width: 400px;
+			margin-bottom: 10px;
+		}
+
+		label{
+			width: 150px;
+			display: inline-block;
+			margin-bottom: 5px;
+		}
+	</style>
+
+</head>
+
+
+<body>
+	<form>
+		<fieldset>
+			<legend>Datos</legend>
+			<label>Usuario</label>
+			<input type="text" name="Usuario"/>
+			<br />
+			
+			<label>Clave</label>
+			<input type="password" name="Clave"/>
+			<br />	
+
+			<input type="radio" name="sexo" value="hombre" checked="checked" />
+			<label>Hombre</label>
+			<input type="radio" name="sexo" value="mujer" checked="checked" />
+			<label>Mujer</label>
+
+		</fieldset>
+		<fieldset>
+			<legend>Vehículo</legend>
+			<input type="checkbox" name="bici">
+			<label>Tengo bici</label><br />
+			<input type="checkbox" name="moto">
+			<label>Tengo moto</label><br />
+			<input type="checkbox" name="coche">
+			<label>Tengo coche</label>
+			
+
+		</fieldset>
+
+		<input type="submit" name="Enviar" value="Enviar"/>
+		<input type="reset" name="Borrar" value="Borrar"/>
+	</form>
+
+
+</body>
+</html>

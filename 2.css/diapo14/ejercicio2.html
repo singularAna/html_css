@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<title>Ejercicio 2</title>
+
+	<style type="text/css">
+		
+	*{
+		margin: 0px;
+		padding: 0px;
+	}
+
+	body{
+		padding: 10px;
+	}
+
+	header,aside,footer,section, article{
+		text-align: center;
+		border: solid 1px darkblue;
+		padding: 20px;
+	}
+
+	.grid-container{
+		display: grid;
+		grid-template-columns: 30% 15% 20% auto;
+		grid-gap: 5px;
+	}
+
+	header{
+	background-color: #F7EF98;
+	grid-column: 1/4;
+	}
+
+	article{
+	background-color: #F7EF98;
+	grid-column: 4/5;
+	}
+
+	aside{
+		background-color: #CFF8F6;
+		grid-area: 2/1/4/3;
+	}
+
+	
+	section{
+		background-color: #C085D9;
+		grid-column: 3/5;
+	}
+
+		footer:nth-of-type(1){
+		background-color: #E9A4A4;
+		grid-column: 1/2;
+	}
+
+		footer:nth-of-type(2){
+		background-color: #E9A4A4;
+		grid-column: 2/4;
+	}
+
+		footer:nth-of-type(3){
+		background-color: #E9A4A4;
+		grid-column: 4/5;
+	}
+
+
+
+	</style>
+
+</head>
+
+<body class="grid-container">
+
+	<header>HEADER</header>
+	<article>LOGIN</article>
+
+	<aside>IZQ</aside>
+
+	<section>MAIN</section>
+	<section>DER</section>
+
+	<footer>FOOTER</footer>
+	<footer>FOOTER</footer>
+	<footer>FOOTER</footer>
+	
+
+</body>
+</html>

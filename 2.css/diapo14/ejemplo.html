@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<title>Ejemplo</title>
+
+	<style type="text/css">
+		
+	*{
+		margin: 0px;
+		padding: 0px;
+	}
+
+	body{
+		padding: 10px;
+	}
+
+	div{
+		text-align: center;
+		border: solid 1px darkblue;
+		padding: 20px;
+	}
+
+	div:nth-of-type(1){background-color:aliceblue;}
+	div:nth-of-type(2){background-color:pink;}
+	div:nth-of-type(3){background-color:lightyellow;}
+	div:nth-of-type(4){background-color:goldenrod;}
+	div:nth-of-type(5){background-color:#D5CCCC;}
+	div:nth-of-type(6){background-color:#F96865;}
+
+	.grid-container{
+		display: grid;
+		grid-template-columns: 20% 20% 20%;
+		height: 200px;
+		grid-template-rows: 50px 100px;
+		justify-content: end;
+		align-content: start;
+		grid-gap: 5px;
+	}
+
+	/*.grid-container{
+		display: grid;
+		grid-template-columns: 20% 20% 20%;
+		height: 200px;
+		grid-template-rows: 50px 100px;
+		justify-content: space-around;
+		align-content:center; 
+		grid-gap: 5px;
+	}*/
+
+	/*.grid-container{
+		display: grid;
+		grid-template-columns: 20% 20% 20%;
+		height: 200px;
+		grid-template-rows: 50px 100px;
+		justify-content: space-between;
+		align-content: end;
+		grid-gap: 5px;
+	}*/
+
+	/*.grid-container{
+		display: grid;
+		grid-template-columns: 20% 20% 20%;
+		height: 200px;
+		grid-template-rows: 50px 100px;
+		justify-content: start;
+		align-content: space-around;
+		grid-gap: 5px;
+	}*/
+
+	/*.grid-container{
+		display: grid;
+		grid-template-columns: 20% 20% 20%;
+		height: 200px;
+		grid-template-rows: 50px 100px;
+		justify-content:center;
+		align-content: space-between;
+		grid-gap: 5px;
+	} */
+
+
+
+	</style>
+</head>
+
+<body>
+
+	<div class="grid-container">
+		
+		<div>Elemento 1</div>
+		<div>Elemento 2</div>
+		<div>Elemento 3</div>
+		<div>Elemento 4</div>
+		<div>Elemento 5</div>
+		<div>Elemento 6</div>
+		
+	</div>
+
+	
+</body>
+</html>

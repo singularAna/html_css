@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<title>Filtros</title>
+
+	<script type="text/javascript">
+		function desenfoque() {
+			var desenfoque=document.getElementById('desenfoque').value;
+
+			document.getElementById('foto').style.filter='blur('+desenfoque+'px)';
+		}
+
+		function opacidad() {
+			var opacidad=document.getElementById('opacidad').value;
+
+			document.getElementById('foto').style.filter='opacity('+opacidad+'%)';
+		}
+
+		function contraste() {
+			var contraste=document.getElementById('contraste').value;
+
+			document.getElementById('foto').style.filter='contrast('+contraste+'%)';
+		}
+
+		function grises() {
+			var grises=document.getElementById('grises').value;
+
+			document.getElementById('foto').style.filter='grayscale('+grises+'%)';
+		}
+
+		function hue() {
+			var hue=document.getElementById('hue').value;
+
+			document.getElementById('foto').style.filter='hue-rotate('+hue+'deg)';
+		}
+
+		function invert() {
+			var invert=document.getElementById('invert').value;
+
+			document.getElementById('foto').style.filter='invert('+invert+'%)';
+		}
+
+		function sat() {
+			var sat=document.getElementById('sat').value;
+
+			document.getElementById('foto').style.filter='saturate('+sat+'%)';
+		}
+
+		function sepia() {
+			var sepia=document.getElementById('sepia').value;
+
+			document.getElementById('foto').style.filter='sepia('+sepia+'%)';
+		}
+
+		function brig() {
+			var brig=document.getElementById('brig').value;
+
+			document.getElementById('foto').style.filter='brightness('+brig+'%)';
+		}
+
+		
+
+			function sombra() {
+				var h=document.getElementById('h').value;
+
+				document.getElementById('foto').style.filter='drop-shadow('+h+'px)';
+			}
+
+			function sombra2() {
+				var v=document.getElementById('v').value;
+
+				document.getElementById('foto').style.filter='drop-shadow('+v+'px)';
+			}
+
+			function sombra3() {
+				var b=document.getElementById('b').value;
+
+				document.getElementById('foto').style.filter='drop-shadow('+b+'px)';
+			}
+
+	</script>
+
+</head>
+
+
+<body>
+	<h1>Descripción</h1>
+	<hr>
+
+	<p>Con este ejemplo se pueden probar los diferentes filtros de imagen que ofrece CSS, así como calcular los valores deseados para nuestras imágenes.</p>
+	<figure>
+	<img id="foto" src="imagenes/bart.png" alt="bart" title="dibujo" />
+	</figure>
+
+		<label>Drop-shadow(px):</label>
+		h<input type="range" id="h" oninput="sombra1();"  min="0" max="100" step="1"> 
+		v<input type="range" id="v" oninput="sombra2();"  min="0" max="100" step="1"> 
+		b<input type="range" id="b" oninput="sombra3();"  min="0" max="100" step="1">
+		<br />
+
+		<label>Blur(px):</label>
+		0<input type="range" id="desenfoque" onchange="desenfoque();" min="0" max="20" step="1"> 20
+		<br />
+
+		<label>Opacidad(%):</label>
+		0<input type="range" id="opacidad" oninput="opacidad();"  min="0" max="20" step="1"> 100
+		<br />
+
+		<label>Contrast(%):</label>
+		0<input type="range" id="contraste" oninput="contraste();"  min="0" max="20" step="1"> 100
+		<br />
+
+		<label>grayscale(%):</label>
+		0<input type="range" id="grises" oninput="grises();"  min="0" max="100" step="1"> 100
+		<br />
+
+		<label>hue-rotate(deg):</label>
+		0<input type="range" id="hue" oninput="hue();"  min="0" max="100" step="1"> 100
+		<br />
+
+		<label>invert(%):</label>
+		0<input type="range" id="invert" oninput="invert();"  min="0" max="100" step="1"> 100
+		<br />
+
+		<label>saturate(%):</label>
+		0<input type="range" id="sat" oninput="sat();"  min="0" max="100" step="1"> 100
+		<br />
+
+		<label>sepia(%):</label>
+		0<input type="range" id="sepia" oninput="sepia();"  min="0" max="100" step="1"> 100
+		<br />
+
+		<label>brightness(%):</label>
+		0<input type="range" id="brig" oninput="brig();"  min="0" max="100" step="1"> 100
+		<br />
+
+		
+		
+		
+
+
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<title>Maquina pinzar</title>
+
+	<style type="text/css">
+		
+	#container{
+		width: 1280px;
+		height: 897px:;
+		background-image: url("imagenes/fondo.png");
+		background-repeat: no-repeat; 
+		margin-top: 0.55%;
+	}
+		#maquina{
+		position:absolute;
+		top:0px;
+		left: 10px;
+		}
+
+		#marcianito{
+		position:relative;
+		top:-850px;
+		left: 100px;
+		animation: subir 5s;
+		animation-delay: 4s;
+		}
+
+		#pinzas{
+		position:relative;
+		top:-200px;
+		left:0px;
+		animation: alargar 3s, trasladar 1s, recoger 5s;
+		animation-delay: 0s,3s,4s;
+		animation-fill-mode: forwards;
+
+		}
+
+	    	#nave{
+			position:relative;
+			top:-850px;
+			left: 940px;
+			}
+
+			#marcianos{
+			position:relative;
+			top:-170px;
+			left: 0px;
+			}
+
+		@keyframes alargar{
+				0%{top:-200px;}
+				25%{top:-150px;}
+				50%{top:-90px;}
+				100%{top:-150px;}
+			}
+
+		@keyframes trasladar{
+				0%{left:0px;}
+				25%{left:150px;}
+				40%{left:200px;}
+				50%{left:250px;}
+				75%{left:300px;}
+				85%{left:350px;}
+				100%{left:440px;}
+			}
+
+		@keyframes recoger{
+				0%{top:-100px;}
+				100%{top:-300px;}
+			}
+
+		@keyframes subir{
+				0%{top:-850px;}
+				100%{top:-1000px;}
+			}
+
+	</style>
+</head>
+
+
+<body>
+	<div id="container">
+		<img id="pinzas" src="imagenes/pinzas.png" alt="pinzas maquina">
+		<img id="marcianos" src="imagenes/marcianos.png" alt="marcianos de peluche">
+		<img id="maquina" src="imagenes/maquina.png" alt="maquina peluches">
+		<img id="nave" src="imagenes/nave.png" alt="nave espacial">
+		<img id="marcianito" src="imagenes/marcianito.png" alt="marcianito">		
+	</div>
+
+</body>
+</html>

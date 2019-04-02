@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<title>Duplicar tabla</title>
+
+		<style type="text/css">
+
+		 th, td {
+ 		 border: 1px solid black;
+ 		 text-align: center;
+ 		 font-size: 1vw;
+ 		 font-family: verdana;
+		}
+
+		td {
+			background:#D6FDEC;
+		}
+
+		th {
+		width: 200px;
+		height: 50px;
+ 		background:linear-gradient(to bottom, #DCFB5E 5%, #7CFF72 70%, #17FD4D 10%);
+ 		color:#FFF;
+ 		text-shadow: 1px 1px 2px #000;
+		}
+
+		tr>th{
+			border-radius: 1em 1em 0em 0em;
+		}
+
+		th:first-of-type{
+			border-radius: 1em 0em 0em 1em;
+		}
+
+		th:empty{
+			border: 0;
+			background: #FFF;
+		}
+
+		table>tfoot>tr>th {
+			border: 0;
+			background: #FFF;
+			color: #000;
+			text-shadow: none;
+			font-size: 0.8vw;
+		}
+
+		table>tfoot>tr>td {
+			border: 0;
+			background: #FFF;
+			color:#6DC22E;
+		    text-shadow: 1px 1px #000;
+		    font-size: 2vw;
+		}
+
+		</style>
+</head>
+
+
+
+
+<body>
+
+<table>
+
+
+  <tr>
+    <th></th>
+    <th>Inicial</th> 
+    <th>Media </th> 
+    <th>Negocios</th> 
+    <th>Deluxe</th> 
+  </tr>
+
+  <tr>
+    <th>Espacio</th>
+    <td>512MB</td> 
+    <td>1GB</td> 
+    <td>2GB</td> 
+    <td>4GB</td> 
+  </tr>
+
+  <tr>
+    <th>Ancho de banda</th>
+    <td>50MB</td> 
+    <td>100GB</td> 
+    <td>150GB</td> 
+    <td>Ilimitado</td> 
+  </tr>
+
+  <tr>
+    <th>Base de datos de MariaDB</th>
+    <td>Ilimitado</td> 
+    <td>Ilimitado</td>
+    <td>Ilimitado</td>
+    <td>Ilimitado</td>
+  </tr>
+
+  <tr>
+    <th>Base de datos MySQL </th>
+    <td>512MB</td> 
+    <td>1GB</td>
+    <td>2GB</td>
+    <td>4GB</td>
+  </tr>
+
+  <tr>
+    <th>PHP</th>
+    <td><img src=imagenes/check.png /></td> 
+    <td><img src=imagenes/check.png /></td>
+    <td><img src=imagenes/check.png /></td>
+    <td><img src=imagenes/check.png /></td>
+  </tr>
+
+<tfoot>
+  <tr>
+    <th>Precio por mes</th>
+    <td>2,99€</td> 
+    <td>4,99€</td>
+    <td>6,99€</td>
+    <td>19,99€</td>
+  </tr>
+</tfoot>
+	</table>
+
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<title>Ejercicio 1a</title>
+
+	<style type="text/css">
+		
+	*{
+		margin: 0px;
+		padding: 0px;
+	}
+
+	body{
+		padding: 10px;
+	}
+
+	header,aside,main,footer,section{
+		text-align: center;
+		border: solid 1px darkblue;
+		padding: 20px;
+	}
+
+	.grid-container{
+		display: grid;
+		grid-template-columns: 20% 20% 20%;
+		justify-content: center;
+		align-content: start;
+		grid-gap: 5px;
+	}
+
+	header{
+	background-color: #F7EF98;
+	grid-column: 1 / 4;
+	}
+
+	aside{
+		background-color: #CFF8F6;
+		grid-column: 1 / 2;
+	}
+
+	main{
+		background-color: #C085D9;
+		grid-column: 2 / 3;
+	}
+
+	section{
+		background-color: #E9A4A4;
+		grid-column: 3 / 4;
+	}
+	
+	footer{
+		background-color: #FAC4ED;
+		grid-column: 1 / 4;
+	}
+
+	</style>
+
+</head>
+
+<body class="grid-container">
+
+	<header>HEADER</header>
+
+	<aside>IZQ</aside>
+	<main>MAIN</main>
+	<section>DER</section>
+
+	<footer>FOOTER</footer>
+
+</body>
+</html>

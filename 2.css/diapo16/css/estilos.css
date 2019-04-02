@@ -1,0 +1,176 @@
+
+
+body{
+	width: 90%;
+	margin: auto;
+}
+
+header{
+	grid-area: he;
+	background-color: #d5f4e6;
+	text-align: center;
+}
+
+nav{ 
+		grid-area: na;
+		background-color: #eca1a6;
+		padding: 2%;
+		text-align: center;
+	}
+
+		a{
+			text-decoration: none;
+			color: #000;
+		}
+
+		li {
+			list-style: none;
+			display: inline-block;
+			font-family: arial,verdana;
+			font-weight: bold;
+			margin-right: 2%;
+			font-size: calc(12px+1vw);
+		}
+
+		li:hover{
+			background-color: #c94c4c;
+		}
+
+		a:hover{
+		color: #fff;
+		}
+h1{
+	font-family: 'Pacifico', cursive;
+}
+
+main{
+	grid-area: ma;
+	justify-content: center;
+}
+	.grid-main{
+	display: grid;
+	grid-template-columns: 25% 25% 25%;
+	grid-column-gap: 8%;
+	grid-template-areas:
+	'fi1 fi2 fi3'
+	'fi4 fi5 fi6'
+	'fi7 fi8 fi9';
+}
+
+figure img{
+	width: 100%;
+}
+		figure:nth-of-type(1){
+			grid-area: fi1;
+  			
+		}
+
+		figure:nth-of-type(2){
+			grid-area: fi2;
+		}
+
+		figure:nth-of-type(3){
+			grid-area: fi3;
+		}
+
+		figure:nth-of-type(4){
+			grid-area: fi4;
+		}
+
+		figure:nth-of-type(5){
+			grid-area: fi5;
+		}
+
+		figure:nth-of-type(6){
+			grid-area: fi6;
+		}
+
+		figure:nth-of-type(7){
+			grid-area: fi7;
+		}
+
+		figure:nth-of-type(8){
+			grid-area: fi8;
+		}
+
+		figure:nth-of-type(9){
+			grid-area: fi9;
+		}
+
+
+		figure:nth-of-type(1):hover{
+  			filter: blur(5px);
+  			}
+
+  		figure:nth-of-type(2):hover{
+    		filter: grayscale(100%);
+  			}
+
+  		figure:nth-of-type(3):hover{
+			filter:brightness(200%);
+			
+  			}
+  		figure:nth-of-type(4):hover{
+			filter:drop-shadow(8px 8px 10px gray);
+  			}
+
+  		figure:nth-of-type(5):hover{
+			filter:hue-rotate(90deg);
+  			}
+
+  		figure:nth-of-type(6):hover{
+			filter:invert(100%);
+  			}
+
+  		figure:nth-of-type(7):hover{
+			filter:opacity(30%);
+  			}
+
+  		figure:nth-of-type(8):hover{
+			filter:saturate(8);
+  			}
+
+  		figure:nth-of-type(9):hover{
+			filter:sepia(100%);
+  			}
+
+
+		
+
+
+footer{
+	grid-area: fo;
+	background-color: #eca1a6; 
+	text-align: center;
+	padding: 1%;
+}
+
+
+.grid-container{
+	display: grid;
+	grid-template-columns: 30% auto 30% ;
+	grid-template-areas:
+	'he he he'
+	'na na na'
+	'ma ma ma'
+	'ma ma ma'
+	'ma ma ma'
+	'fo fo fo';
+}
+
+
+@media screen and (max-width:768px){
+
+	.grid-main{
+	grid-template-columns: 50% 50%;
+	grid-template-areas:
+	'fi1 fi2 '
+	'fi3 fi4'
+	'fi5 fi6'
+	'fi7 fi8'
+	'fi9 .';
+}
+}
+
+
+	

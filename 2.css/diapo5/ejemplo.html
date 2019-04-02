@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<title> ejercicio 1. Background</title>
+
+	<style>
+
+	div{
+		width: 40%;
+		padding: 3%;
+		border: 1px solid #000;
+		margin: 1%;
+	}
+
+	div:first-of-type {
+		background:linear-gradient(to right, white 0%, yellow 10%, blue 100%);
+	}
+
+	div:nth-of-type(2) { 
+		background:linear-gradient(45deg, rgba(105,10,10,0.5) 0%, rgba(255,10,1,0.5) 100%);
+	}
+
+	div:nth-of-type(3) { 
+		background:repeating-linear-gradient(to right, white 0%, red 10%);
+	}
+
+	div:nth-of-type(4) { 
+		background: radial-gradient(circle, white,orange);
+	}
+
+	div:nth-of-type(5) { 
+		background: radial-gradient(ellipse, white, green);
+	}
+
+	</style>
+
+</head>
+<body>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+
+</body>
+</html>

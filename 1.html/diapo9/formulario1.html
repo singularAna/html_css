@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>formularios</title>
+	<style type="text/css">
+		fieldset{
+			width: 400px;
+			margin-bottom: 10px;
+		}
+
+		label{
+			width: 150px;	
+		}
+
+		.inline {
+			display: inline-block;
+		}
+
+	</style>
+
+</head>
+<body>
+
+</body>
+	<h1> Formulario estructurado</h1>
+	<form>
+		<fieldset>
+			<legend>Personal Particular</legend>
+			<label>Name</label>
+			<input type="text" name="name"/>
+			<br /><br />
+			
+			
+			<label>Password</label>
+			<input type="password" name="password"/>
+			<br /><br />	
+
+			<label>Gender:</label>
+			<input type="radio" name="sexo" value="hombre" checked="checked" />
+
+			<label>Male</label>
+			<input type="radio" name="sexo" value="mujer" checked="checked" />
+			<label>Female</label>
+			<br /><br />	
+
+			<label>Age:</label>
+			<select name="age">
+				<option> >1 year old</option>
+				<option> 1 year old</option>
+				<option> 2 year old</option>
+			</select>
+
+		</fieldset>
+
+
+		<fieldset>
+			<form>
+				<legend>Languages</legend>
+  				<input class="inline" type="checkbox" name="Java" value="Java"/>
+  					<label> Java</label>
+  				<input class="inline" type="checkbox" name="C/C++" value="C/C++"/>
+  					<label> C/C++</label>
+  				<input class="inline" type="checkbox" name="C#" value="C#"/>
+  				<label> C#</label>
+			</form>
+		</fieldset>
+
+		<fieldset>
+			<legend>Instruction</legend>
+				<textarea rows="5" cols="50">Enter your instruction here...</textarea>
+			
+		</fieldset>
+
+		<input type="submit" name="Send" value="Send" />
+		<input type="reset" name="Clear" value="Clear" />
+
+	</form>
+</html>

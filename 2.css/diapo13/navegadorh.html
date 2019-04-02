@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<title>Menú desplegable horizontal</title>
+
+	<style type="text/css">
+
+
+	.menu li, .submenu li{
+		list-style-type: none;
+		padding: 10px;
+		color: #BDCBEE;
+	}
+
+	.menu{
+		background-color: #7A7777;
+	}
+
+	.menu>li{
+		display:inline-block;
+		position:relative;
+	}
+
+	.menu li:hover{
+		color: #FFF;
+		background-color:#BDCBEE;
+	}
+
+	.menu>li:hover .submenu {
+		max-height: 500px;
+	}
+
+	.submenu{
+		position: absolute;
+		overflow: hidden;
+		max-height: 0px;
+		top: 40px; left:0px;
+		background-color: #FFF;
+		width: 100%;
+		box-shadow: 0px 2px 4px rgba(60,60,60,0.6);
+		transition:0.5s;
+	}
+		
+	</style>
+	
+	
+</head>
+
+<body>
+
+	<ul class="menu">
+
+		<li><a href="#">Archivo</a></li> 
+		<li><a href="#">Edición</a></li>
+		<li><a href="#">Visita</a></li>
+		<li><a href="#">Ayuda</a>
+		
+			<ul class="submenu">
+				<li><a href="#">Link 1</a></li>
+				<li><a href="#">Link 2</a></li>
+				<li><a href="#">Link 3</a></li>
+			
+			</ul>
+			</li>
+	</ul>
+</body>
+</html>

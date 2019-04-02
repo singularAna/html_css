@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<title>Ejercicio3: Web barcos</title>
+	<link rel="stylesheet" type="text/css" href="css/estilos3.css">
+
+	<script type="text/javascript">
+		function mostrar() {
+
+		var nav= document.getElementById('n');
+
+		  if (n.style.display === "none") {
+		    n.style.display = "block";
+		  } else {
+		    n.style.display = "none";
+		  }
+		}
+
+ 
+	</script>
+</head>
+
+
+<body>
+		<nav class="sticky" id="n">
+			<ul>
+				<li><a href="#">Arte</a></li>
+				<li><a href="#">Retratos</a></li>
+				<li><a href="#">Paisajes</a></li>
+			</ul>
+		</nav>
+
+	<header>
+		<img src="imagenes/menu.png" alt="tresbarras" id="menu" onclick="mostrar();" />
+	</header>
+
+	<main class="grid-container">
+		<content>Contenido</content>
+		<aside>Galeria</aside>
+		<article>Contacto</article>
+		<article>Ubicación</article>
+		<footer>Footer</footer>
+	</main>
+
+	
+
+</body>
+</html>

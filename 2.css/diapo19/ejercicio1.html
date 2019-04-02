@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<title>Libro-3D-abrir al pasar ratón</title>
+
+	<style type="text/css">
+
+		body{
+		margin-left: 10%;
+		margin-top: 10%;
+		}
+	
+		#libro{
+			position: relative;
+			height: 200px;
+			width: 200px;
+			transform-style: preserve-3d;
+			transform: rotateX(45deg) rotateY(25deg);
+		}
+
+		#libro img{
+			position: absolute;
+			border:solid 1px black;
+			height: 200px; width: 200px;
+			transform-origin: 0% 50%;
+
+		}
+			#libro .portada{transform: rotateY(-10deg);}
+			#libro .hoja:nth-of-type(2){transform: rotateY(5deg);}
+			#libro .hoja:nth-of-type(3){transform: rotateY(10deg);}
+			#libro .hoja:nth-of-type(4){transform: rotateY(15deg);}
+			#libro .hoja:nth-of-type(5){transform: rotateY(20deg);}
+			#libro .contraportada{transform: rotateY(25deg);}
+
+
+			#libro:hover .portada{
+				transform: rotateY(-160deg);
+				transition: 2s;
+			}
+
+
+			#libro:hover .hoja:nth-of-type(2){
+				transform: rotateY(-140deg);
+				transition: 4s;
+			}
+
+			#libro:hover .hoja:nth-of-type(3){
+				transform: rotateY(-120deg);
+				transition: 6s;
+			}
+
+			#libro:hover .hoja:nth-of-type(4){
+				transform: rotateY(-100deg);
+				transition: 8s;
+			}
+
+			#libro:hover .hoja:nth-of-type(5){
+				transform: rotateY(-80deg);
+				transition: 10s;
+			}
+
+	</style>
+
+</head>
+
+<body>
+	<div id="libro">
+		<img class="portada" src="imagenes/portada.jpg"/>
+		<img class="hoja" src="imagenes/hoja.jpg"/>
+		<img class="hoja" src="imagenes/hoja2.jpg"/>
+		<img class="hoja" src="imagenes/hoja3.jpg"/>
+		<img class="hoja" src="imagenes/hoja4.jpg"/>
+		<img class="contraportada" src="imagenes/contraportada.jpg"/>
+	</div>
+</body>
+</html>
+

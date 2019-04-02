@@ -1,0 +1,29 @@
+h1{
+	color: red;
+}
+
+h2{
+	text-decoration: underline;
+	color: green;
+}
+
+p{
+	font-style: italic;
+}
+
+body>p{ 
+	font-weight: bold;
+}
+
+p+div p{
+	text-decoration: line-through;
+}
+
+
+#rojo:target{
+	color: red;
+}
+
+#fondo:target{
+	background-color: #00F;
+}

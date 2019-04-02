@@ -1,0 +1,132 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	margin: auto;
+	border: solid 1px #000;
+	width: 90%;
+}
+
+nav, main,footer, section{
+		border: solid 1px #000;
+	}
+
+	header{
+		position: static;
+		background-image: url('../imagenes/teclado.png');
+		background-size: 100%;	
+		color: #FFF;
+		background-repeat: no-repeat;	
+	}
+
+			h1,h3{
+				padding-left: 2%;
+				color: #FFF;
+				text-shadow: 3px 3px #760303;
+				font-family: arial;
+			}
+
+			.carro{
+			background-color: #FFF;
+			position: absolute;
+			top: 20px;
+			right: 200px;
+			}
+
+	nav{
+	background-color: #A48AD0;
+	height: 3vw;
+	padding-top: 2%;
+	}
+
+	.sticky{
+	position: fixed;
+	top: 5;
+	width: 90%;
+	}
+
+		h1{
+			padding-top: 1%;
+			font-size: 4vw;
+		}
+
+		h2{
+			font-size: 2vw;
+			padding-bottom: 1%;
+		}
+
+		h3{
+			font-size: 2vw;
+			padding-bottom: 1%;
+		}
+
+		h4{
+			font-size: 2vw;
+			padding-bottom: 1%;
+		}
+
+		li {
+			list-style: none;
+			display: inline-block;
+			margin-left: 5%;
+			font-family: arial,verdana;
+			font-weight: bold;
+
+		}
+
+		a{
+			text-decoration: none;
+			color: #333333;
+			font-size: calc (12px+2vw);
+		}
+
+		a:hover { 
+	  	color: #FFF;
+	  	}
+	
+main{
+	padding: 1%;
+}
+	section{
+		display: flex;
+		margin-bottom: 2%;	
+	}	
+
+	section:first-of-type{
+		padding-top: 8%;
+	}
+
+
+		figure{
+			flex:1;
+		}
+
+		article{
+			flex:2
+		}
+
+		aside{
+			flex:1
+		}
+
+		button{
+			position: relative;
+			left: 30%;
+		}
+
+		 aside>button {
+		  background-color: #4CAF50;
+		  border: none;
+		  color: white;
+		  padding: 15px 32px;
+		  text-align: center;
+		  text-decoration: none;
+		  display: inline-block;
+		  font-size: 16px;
+		  margin: 4px 2px;
+		  cursor: pointer;
+		}
+
+		

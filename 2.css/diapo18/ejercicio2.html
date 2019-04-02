@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<title>Ejercicio 2: objeto efecto 3D</title>
+
+
+	<style type="text/css">
+		#contenedor{
+			position: fixed;
+			width: 50%; height: 25%;
+			top: 10%; left: 25%;
+			background-color: #BEEEF8;
+			padding: 30px;
+		}
+
+		#contenedor:hover .bocadillo{
+			transform: rotateY(180deg) rotate(10deg);
+			transition: 1s;
+		}
+
+		.bocadillo{
+			position: relative;
+			margin: auto;
+			width: 350px;height: 250px;
+			transform-style: preserve-3d;
+			border-radius: 10px;
+			transition: 2s;
+		}
+
+		.bocadillo .cara {
+			position: absolute;
+			width: 350px; height: 250px;
+			backface-visibility: hidden;
+		}
+		.bocadillo .cara.trasera{
+			transform: rotateY(150deg);
+		}
+
+	</style>
+
+</head>
+
+<body>
+
+	<div id="contenedor">
+		<div class="bocadillo">
+			<img class="cara frontal" src="imagenes/zap.png"/>
+			<img class="cara trasera" src="imagenes/pow.png"/>
+		</div>
+	</div>
+
+</body>
+	
+</html>

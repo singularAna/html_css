@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>ejercicio2 diapo11</title>
+
+	<style type="text/css">
+		
+	input: invalid {
+	border: 2px solid red;
+	}
+
+	input: valid {
+	border: 2px solid green;
+	}
+
+	</style>
+
+
+</head>
+<body>
+
+<title>DNI 8 número y una letra a)</title>
+<form >
+	
+	<label>DNI:</label>
+	<input type="text" name="dnilogin" required="required" pattern="^\d{8}[A-Z]{1}$" title="DNI" maxlength="9"/><br />
+
+	<input type="submit value="comprobar">
+	<br />
+</form>
+
+<hr>
+
+<title>DNI 8 número y letras validas b)</title>
+<form >
+
+	<label>DNI:</label>
+	<input type="text" name="dnilogin" required="required" pattern="^\d{8}[^IOÑU]{1}$" title="DNI" maxlength="9"/><br />
+
+	<!--  ^\d{8}[A-HJ-NP-TV-Z]{1}$  -->
+
+	<input class="boton" type="submit" name="Acceder">
+	<br />
+
+<hr>
+
+<title>DNI, incluidos los que empiezan XYZ c)</title>
+<form >
+	
+	<label>DNI/NIE:</label>
+	<input type="text" name="dnilogin" required="required" pattern="((^[XYZ]\d{7}[A-HJ-NP-TV-Z]{1})|(^\d{8}[A-HJ-NP-TV-Z]{1}))$" title="DNI2" maxlength="9/"><br />
+
+	<input class="boton" type="submit" name="Acceder">
+	<br />
+</form>
+
+
+<!--  ^[XYZ]\d{7}[A-HJ-NP-TV-Z]{1}$  NIE  -->
+
+<hr>
+
+<title> una hora hh-mm-ss cualquier número válido d)</title>
+<form >
+	
+	<label>Hora:</label>
+	<input type="text" name="hourlogin" required="required" pattern="(^[2][0-3])|([01])\d"):[0-5]\d:[0-5]\d$"  title="hora" maxlength="9"/><br />
+
+
+
+	<input class="boton" type="submit" name="Acceder">
+	<br />
+</form>
+
+<hr>
+
+<title> teléfono como +34 666 66 66 66 e)</title>
+<form >
+	
+	<label>Número:</label>
+	<input type="text" name="numberlogin" required="required" pattern="^[+][1-9]\d{0,2}\s\d{3}\s\d{2}\s\d{2}$" title="numero" maxlength="12"><br />
+
+	<input class="boton" type="submit" name="Acceder">
+	<br />
+</form>
+
+<hr>
+
+<title> una fecha formato dd-mm-aa f)</title>
+<form >
+	
+	<label>Fecha:</label>
+	<input type="text" name="datelogin" required="required" pattern="^\d\d:\d\d:\d\d\d\d $" title="fecha" maxlength="6"><br />
+
+	<input class="boton" type="submit" name="Acceder">
+	<br />
+
+<!-- "\d{2}:\d{2}:\d{4}"  -->
+
+</form>
+
+<hr>
+
+<title> fecha dd-mm-aa dia(0-31), mes(1-12), año(1900-2100) g)</title>
+<form >
+	
+	<label>Fecha:</label>
+	<input type="text" name="datelogin" required="required" pattern="^(([0][1-9])|([12]\d)|([3][01])):(([0][1-9])|([0][012])):(([1][9]\d\d)|([2][0]\d\d)|[2][1][0][0]))$/>
+
+	<input class="boton" type="submit" name="Acceder">
+	<br />
+</form>
+
+<hr>
+
+</body>
+</html>

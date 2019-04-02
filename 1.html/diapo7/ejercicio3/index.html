@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>agencia de viajes</title>
+		
+		<style type="text/css">
+		div,footer {
+			width: 1200px;
+		} 
+
+		div{
+			padding: 10px 10px 10px 10px;
+			background-color: #d9d9d9;
+		}
+
+		header{
+			text-align: center;
+			width: 1196px;
+			height: 500px;
+			margin-top:10px;
+			background-color: #ffffff;
+			padding-top: 5px;
+			padding-bottom: padding-top: 5px;
+		}
+
+		main{
+			margin-top:10px;
+			margin-right: 10px;
+			width:100%;
+		}
+
+			nav{
+				background-color: #8585ad;
+				margin-top:10px;
+				height: 245px;
+				width: 19.91%;
+				display:inline-block;
+			}
+
+			article{
+				border: solid 4px #8585ad;
+				margin-top:10px;
+				height: 216px;
+				width: 77.2%;
+				display: inline-block;	
+				vertical-align: top;
+				padding:10px 10px 10px 10px;
+			}
+
+			section{
+				background-color: #808080;
+				margin-top:10px;
+				padding-top: 10px;
+				height: 400px;
+				width: 99.9%;
+				margin-bottom: 10px;
+				
+			}
+
+				#foto1{
+					border: solid 1px #000;
+					display: inline-block;
+					width: 250px;
+					height: 250px;
+					margin-left: 120px;
+				}
+
+				#foto2{
+					border: solid 1px #000;
+					display: inline-block;
+					width: 250px;
+					height: 250px;
+					margin-left: 70px;
+				}
+
+				#foto3{
+					border: solid 1px #000;
+					display: inline-block;
+					width: 250px;
+					height: 250px;
+					margin-left: 70px;
+				}
+
+				.ciudad{
+				display: inline-block;
+				border: solid 1px #000;
+				width: 100px;
+				margin-bottom: 2px;
+				margin-left: 165px;
+				margin-right: 55px;
+				overflow: hidden;
+				font-family: Arial, verdana;
+				font-size: 17px;
+				text-align: center;
+				background-color: #ffffff;
+				}
+			#reclamaciones{
+			width: 400px;
+			margin-bottom: 10px;
+			display: inline-block;
+			}
+
+
+			#mapa {
+			display: inline-block;
+			align-content: top;
+			margin-left: 150px;
+			}
+
+			.re{
+			width: 150px;
+			display: inline-block;
+			margin-bottom: 10px;
+			text-align: right;
+			margin-right: 5px;
+			font-family: arial, verdana;
+			font-size: 14px;
+			}
+
+			#boton {
+			margin-left: 38%;
+			background-color: #8cd9b3;
+			}
+
+			.aceptacion{
+			font-family: arial, verdana;
+		}
+
+		footer{
+			margin-top:10px;
+			height: 460px;
+			background-color: #bfbfbf;
+		}
+
+		li{
+			margin:auto;
+			border: solid 1px #000;
+			margin-bottom: 2px;
+			padding: 20px 10px 10px 5px;
+			overflow: hidden;
+			font-family: Arial, Arial;
+			font-size: 19px;
+		}
+
+
+		fieldset{
+			width: 400px;
+			margin-bottom: 10px;
+			display: inline-block;
+			
+		}
+		label{
+			width: 150px;
+			display: inline-block;
+			margin-bottom: 10px;
+			text-align: right;
+			margin-right: 5px;
+			font-family: arial, verdana;
+			font-size: 14px;
+		}
+
+		#boton {
+			margin-left: 38%;
+			background-color: #8cd9b3;
+		}
+
+		h1 {
+			font-family: arial, verdana;
+			font-size: 20px;
+		}
+
+		.aceptacion{
+			font-family: arial, verdana;
+		}
+
+		#nombre {
+			font-size: 40px;
+			font-family: fantasy;
+		}
+
+
+
+		.new {
+			width: 100px;
+			display: inline-block;
+			margin-bottom: 10px;
+			text-align: right;
+			margin-right: 10px;
+			font-family: arial, verdana;
+			font-size: 15px;
+		}
+
+		#boton {
+			margin-left: 40%;
+			background-color: #00cc44;
+			font-size: 20px;
+		}
+
+		#cargar {
+			width: 340px;
+			margin-bottom: 5px;
+			border: 2px solid #4CAF50;
+		}
+
+		#log {
+			display: inline-block;
+		}
+
+
+		form {
+			width: 400px;
+			height: 400px;
+			display: inline-block;
+		}
+
+		</style>
+</head>
+
+
+<body>
+	<div>
+		<header>
+				<img src="imagenes/logo.png" type="avion">
+				<h1 id="nombre">Travel</h1>
+					
+				<form id="log">
+
+					<fieldset id="cargar">
+
+					<h1> Iniciar sesión</h1>
+
+					<legend></legend>
+					<label class="new">Usuario:</label>
+					<input type="text" name="name"/>
+					<br />
+			
+					<label class="new"> Contraseña:</label>
+					<input type="password" name="password"/>
+					<br /><br />
+
+					<input style="color: white" id="boton" type="submit" name="Enviar" value="Log in"/>
+
+					</fieldset>
+			
+				</form>
+
+
+		</header>
+		
+		<main>
+			<nav>
+				<ul>
+					<li><a href="#" style="text-decoration: none;">Nosotros</a></li>
+					<li><a href="#" style="text-decoration: none;">Tarifas</a></li>
+					<li><a href="#" style="text-decoration: none;">Ofertas</a></li>
+					<li><a href="#" style="text-decoration: none;">Reservas</a></li>
+				</ul>
+
+			</nav>
+			<article>
+				<h2>Descripción agencia</h2>
+				<p> Ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Dolor 
+				sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			</article>
+
+
+			<section>
+			
+			<div id="foto1">foto1</div>
+			<div id="foto2">foto2</div>
+			<div id="foto3">foto3</div>
+			<ul>
+				<li class="ciudad"><a href="barcelona.html" style="text-decoration: none;" _blank>Barcelona</a></li>
+				<li class="ciudad"><a href="paris.html" style="text-decoration: none;" _blank>Paris</a></li>
+				<li class="ciudad"><a href="roma.html" style="text-decoration: none;" _blank>Roma</a></li>
+			</ul>
+
+			</section>
+		</main>
+		<footer>
+			<form>
+
+		<fieldset id="registrar">
+
+			<h1> Registro</h1>
+
+			<legend>Formulario de registro</legend>
+			
+			<label>Usuario:</label>
+			<input type="text" name="usuario"/>
+			<br />
+
+			<label>Nombre:</label>
+			<input type="text" name="name"/>
+			<br />
+			
+			
+			<label>Apellidos:</label>
+			<input type="text" name="lastname"/>
+			<br />
+
+			<label>Contraseña:</label>
+			<input type="password" name="password"/>
+			<br />
+
+			<label>Fecha de nacimiento:</label>
+			
+			<select name="day">
+				<option> 1</option>
+				<option> 2</option>
+				<option> 3</option>
+				<option> 4</option>
+				<option> 5</option>
+				<option> 6</option>
+				<option> 7</option>
+				<option> 8</option>
+				<option> 9</option>
+				<option> 10</option>
+				<option> 11</option>
+				<option> 12</option>
+				<option> 13</option>
+				<option> 14</option>
+				<option> 15</option>
+				<option> 16</option>
+				<option> 17</option>
+				<option> 18</option>
+				<option> 19</option>
+				<option> 20</option>
+				<option> 21</option>
+				<option> 22</option>
+				<option> 23</option>
+				<option> 24</option>
+				<option> 25</option>
+				<option> 26</option>
+				<option> 27</option>
+				<option> 28</option>
+				<option> 29</option>
+				<option> 30</option>
+				<option> 31</option>
+
+			</select>
+
+			<select name="month">
+				<option> 1</option>
+				<option> 2</option>
+				<option> 3</option>
+				<option> 4</option>
+				<option> 5</option>
+				<option> 6</option>
+				<option> 7</option>
+				<option> 8</option>
+				<option> 9</option>
+				<option> 10</option>
+				<option> 11</option>
+				<option> 12</option>
+
+			
+
+			</select>
+			<select name="year">
+				<option> 1992</option>
+				<option> 1993 </option>
+				<option> 1994 </option>
+				<option> 1995 </option>
+				<option> 1995 </option>
+				<option> 1996 </option>
+				<option> 1997 </option>
+				<option> 1998 </option>
+				<option> 1999 </option>
+				<option> 2000 </option>
+				<option> 2001 </option>
+			</select>
+			<br /><br />
+
+
+			<label>DNI:</label>
+			<input type="text" name="dni"/>
+			<br />	
+
+			<label>CP:</label>
+			<input type="text" name="cp"/>
+			<br />
+
+			<label>Población:</label>
+			<input type="text" name="población"/>
+			<br />
+
+			<label> Provincia:</label>
+			<input type="text" name="provincia"/>
+			<br />
+			
+			<label>Email:</label>
+			<input type="text" name="email"/>
+			<br />
+
+	
+			<legend class="aceptacion"><strong>Acepto formar parte de la web de viajes</strong></legend>
+				<input id="agree" type="checkbox" name="aceptar">
+				<br />
+			
+
+			<input id="boton" type="submit" name="Enviar" value="Registro"/>
+
+		</fieldset>
+			
+	</form>
+			
+		<iframe id="mapa" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11971.712324547507!2d2.1900505!3d41.3973682!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x2ce5e151b3383c3c!2sNETMIND%2C+SL!5e0!3m2!1ses!2ses!4v1549367365386" width="550" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+		</footer>
+	</div>
+</body>
+
+
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<title>Ejemplo Pelota</title>
+
+	<style type="text/css">
+		
+		body{
+			width: 40%;
+		}
+
+			#campo{
+			height: 400px; width: 500px;
+			position: relative;	
+			border: 1px solid #000;
+			background-color: #FCF9C2;
+		}
+
+			#pelota{
+				height: 100px;
+				width: 100px;
+				position: absolute;
+				animation-name: botar, rotar, desplazar;
+				animation-duration: 2s,1s;
+				animation-timing-function: cubic-bezier(.74,.26,.74), linear;
+				animation-iteration-count: infinite;
+				animation-direction: alternate;
+			}
+
+			@keyframes botar{
+				0%{top:0px;}
+				50%{top:300px;}
+				100%{top:0px;}
+			}
+
+			
+
+			@keyframes desplazar{
+				0%{left:0%; transform: rotateZ(0deg); }
+				25%{left:15%; transform: rotateZ(50deg);}
+				40%{left:20%; transform: rotateZ(100deg);}
+				60%{left:40%; transform: rotateZ(150deg);}
+				80%{left:60%; transform: rotateZ(200deg);}
+				100%{left:80%; transform: rotateZ(250deg);}
+			}
+
+	</style>
+</head>
+
+<body>
+	<div id="campo">
+		<img id="pelota" src="imagenes/baloncesto.png">
+	</div>
+
+</body>
+</html>

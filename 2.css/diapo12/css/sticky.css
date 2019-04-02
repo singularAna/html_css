@@ -1,0 +1,47 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	margin:auto;
+	border: solid 1px #000;
+	background-color: #E7E3E3;
+}
+
+nav{ 
+	background-color: #000;
+	height: 3vw;
+	padding-top: 2%;
+	text-align: center;
+}
+
+.sticky{
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+
+a{
+		text-decoration: none;
+		color: #FFF;
+		font-size: calc(12px+2vw);
+	}
+
+li {
+		list-style: none;
+		display: inline-block;
+		margin-left: 5%;
+		font-family: arial,verdana;
+		font-weight: bold;
+
+	}
+
+section{
+	padding: 8% 2% 2% 2%;
+}
+
+footer{
+	background-color: #F4C0C0;
+	padding: 2%;
+}

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head lang="es">
+	<meta charset="utf-8">
+	<title>selectores2</title>
+
+		<style type="text/css">
+
+
+			p:empty {
+  			width: 100px;
+  			height: 20px;
+  			background:#A5F2CD;
+			}
+
+			h2::first-letter { 
+  				font-size: 200%;
+  				color: #8A2BE2;
+			}
+
+			p::first-line { 
+  			color: #E6BF09;
+			}
+
+			h1::after { 
+  			content: " (Mira esto)";
+			}
+
+			p::before { 
+  			content: "Lee esto: ";
+			}
+
+			p:nth-child(2){
+				font-family: arial;
+				font-size: 1vw;
+			}
+
+			p:nth-last-of-type(2) {
+  			background: #E19C9C;
+			}
+
+			p:only-of-type {
+			text-decoration: underline;
+			 }
+
+			p:nth-of-type(even){
+				font-style: italic;
+			}
+
+			div:empty{
+				background-color: #B5F5D2;
+			}
+
+			:root {
+  			background: #CDEDF9 ;
+			}
+
+			::selection {
+ 			 color: #8A9AFB;
+ 			 background: #FFF;
+			}
+
+			p:lang(it) { 
+ 			text-align: center;
+ 			background-color: #E0DADA;
+			}
+
+
+		</style>
+</head>
+
+<body>		
+			<article>		
+
+				<h1>Primer título</h1>	
+					<img src="imagenes/bug.png">
+
+					<p> Ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+					<p> Ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+					<p> Ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+			</article>
+			
+
+			<section>
+
+				<h2>Segundo título</h2>
+					<p> Ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+					<p> Ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			</section>
+
+			<aside>
+				<p lang="it">Ciao bella!</p>
+			</aside>
+
+			<footer>
+
+				<p></p>
+
+			</footer>
+				
+</body>
+</html>

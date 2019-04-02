@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<title>Ejercicio 3: Cubo 3D</title>
+
+	<style>
+	.front{
+		background-color: rgba(255,0,0,0.5);
+		transform: translateZ(100px);
+	}
+
+	.back{
+		background-color: rgba(0,255,0.5);
+		transform: rotateY(180deg) translateZ(100px);
+	}
+
+	.left{
+		background-color: rgba(0,0,255,0.5);
+		transform: rotateY(90deg) translateZ(100px);
+	}
+
+	.right{
+		background-color: rgba(255,255,0,0.5);
+		transform: rotateY(-90deg) translateZ(100px);
+	}
+
+	.top{
+		background-color: rgba(255,0,255,0.5);
+		transform: rotateX(90deg) translateZ(100px);
+	}
+
+	.bottom{
+		background-color: rgba(0,255,255,0.5);
+		transform: rotateX(-90deg) translateZ(100px);
+	}
+
+	.cubo{
+		position: relative;
+		transform-style: preserve-3d;
+		height: 200px;
+		width: 200px;
+		transform: rotateX(45deg) rotateY(45deg);
+	}
+
+	.cara{
+		position: absolute;
+		border: solid 1px #000;
+		height: 200px;
+		width: 200px;
+		text-align: center;
+	}
+
+	.cubo:hover{
+			transform: rotateY(200deg) rotateX(45deg);
+			transition: 6s;	
+		}
+
+	body{
+		margin: 5%;
+	}
+
+	</style>
+</head>
+
+<body>
+
+	<div class="cubo">
+		<div class="cara front"><img src="imagenes/front.png"></div>
+		<div class="cara back"><img src="imagenes/back.png"></div>
+		<div class="cara left"><img src="imagenes/left.png"></div>
+		<div class="cara right"><img src="imagenes/right.png"></div>
+		<div class="cara top"><img src="imagenes/top.png"></div>
+		<div class="cara bottom"><img src="imagenes/bottom.png"></div>
+	</div>
+
+</body>
+</html>
